@@ -1,0 +1,8 @@
+# No external dependencies required for basic functionality
+# Future dependencies can be added here
+
+# For testing (optional)
+# pytest>=7.0.0
+
+# For colored output (Issue #7)
+# colorama>=0.4.6
