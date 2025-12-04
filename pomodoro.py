@@ -121,7 +121,11 @@ class PomodoroTimer:
             print("  3) Toggle sound on/off")
             print("  4) Quick test (6s work / 4s break)")
             print("  5) Quit")
-            choice = input("Choose [1-5]: ").strip()
+            try:
+                choice = input("Choose [1-5]: ").strip()
+            except KeyboardInterrupt:
+                print("\nInterrupted by user, shoulda thought before starting heh...")
+                return None
             if choice == "1":
                 return {"sessions": sessions, "work": work, "break": brk, "sound": sound}
             if choice == "2":
